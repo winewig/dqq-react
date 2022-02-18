@@ -7,9 +7,34 @@
   align-items: center;
 }
 
+@media screen and (min-height: 750px) {
+  .header {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .header {
+    width: 1280px;
+  }
+}
+
 .header-container {
-  width: 90%;
+  width: 90%; /* so that there is some space on the left and right side in the header */
   display: flex;
-  justify-content: space-between;
+}
+
+.header-logo-and-title {
+  display: flex;
+  width: 80%; /* for logo and title */
+}
+
+.header-title-container {
+  margin-inline-start: 2%;
+  display: flex;
   align-items: center;
+}
+
+.header-icon {
+  width: 20%;
 }

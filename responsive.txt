@@ -4,3 +4,7 @@
 1366 * 768 (8.44%)
 1536 * 864 (3.88%)
 1920 * 1080 (8.89%)
+
+ - browser window height > 750px, header has 80px height. Header should have another fav logo and font size (Todo)
+ - browser window width > 1366px, header has 1366px width
+ - browser window width > 667 or 768? show menu in header

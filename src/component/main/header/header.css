@@ -46,15 +46,15 @@
 .header-icon-menu-line {
   height: 5px;
   width: 50%;
-  background-color: #8cfffb;
+  background-color: #8cccfb; /* from icon #8cfffb; */
   margin: 2px 0 2px 0;
   position: relative;
   left: 25%;
+  transition: 0.5s;
 }
 
 .header-icon-menu-first-line {
-  transition: 0.5s;
-  transform: rotate(-45deg) translateX(-7px) ;
+  transform: rotate(-45deg) translateX(-7px);
 }
 
 .header-icon-menu-second-line {
@@ -62,6 +62,5 @@
 }
 
 .header-icon-menu-third-line {
-  transition: 0.5s;
-  transform: rotate(45deg) translateX(-7px) ;
+  transform: rotate(45deg) translateX(-7px);
 }

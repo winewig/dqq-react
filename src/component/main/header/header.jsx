@@ -3,18 +3,18 @@ import React, { useState } from 'react';
 import './header.css';
 import logo from './assets/favicon-32x32.png';
 
-const Header = () => {
-
+const Header = (props) => {
   const [menuIsOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuIsOpen);
+    props.setNavbarStatus(!menuIsOpen);
   };
 
-  const getHeaderMenuIconLinesClass = (lineNumber) => {    
+  const getHeaderMenuIconLinesClass = (lineNumber) => {
     let menuOpenClass = menuIsOpen ? ` ${lineNumber}` : '';
     return 'header-icon-menu-line ' + menuOpenClass;
-  }
+  };
 
   return (
     <div className='header'>

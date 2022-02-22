@@ -38,4 +38,30 @@
 
 .header-icon {
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-icon-menu-line {
+  height: 5px;
+  width: 50%;
+  background-color: #8cfffb;
+  margin: 2px 0 2px 0;
+  position: relative;
+  left: 25%;
+}
+
+.header-icon-menu-first-line {
+  transition: 0.5s;
+  transform: rotate(-45deg) translateX(-7px) ;
+}
+
+.header-icon-menu-second-line {
+  display: none;
+}
+
+.header-icon-menu-third-line {
+  transition: 0.5s;
+  transform: rotate(45deg) translateX(-7px) ;
 }
